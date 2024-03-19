@@ -13,7 +13,7 @@ load_dotenv()
 
 #Define the LLM model
 embedding = VoyageEmbeddings(model="voyage-large-2")
-llm_model = ChatOpenAI(temperature=0.0)
+llm_model = ChatOpenAI(temperature=0.0, model="gpt-3.5-turbo-1106")
 #Set the prompt
 prompt = ChatPromptTemplate.from_template(
     """
